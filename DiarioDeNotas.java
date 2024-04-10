@@ -5,7 +5,10 @@ public class DiarioDeNotas{
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite 'Aluno' se você for um aluno e 'Professor' se você for um professor");
         String usuario = sc.nextLine();
-
+         Aluno aluno = new Aluno();
+         aluno.IdentificarAluno();
+         Professor professor = new Professor();
+         professor.IdentificarProfessor();
             if(usuario.equalsIgnoreCase("Professor")) {
                 System.out.println("Digite o seu nome"); 
                 String nome = sc.nextLine();
