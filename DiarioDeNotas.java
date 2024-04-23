@@ -3,8 +3,12 @@ import java.util.Scanner;
 public class DiarioDeNotas{
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
+        Usuario usuario = new Usuario();
+        usuario.setTipoUsuario("Professor");
+        System.out.println(usuario.getTipoUsuario());
+
         System.out.println("Digite 'Aluno' se você for um aluno e 'Professor' se você for um professor");
-        String usuario = sc.nextLine();
+        String  = sc.nextLine();
          Aluno aluno = new Aluno();
          aluno.IdentificarAluno();
          Professor professor = new Professor();
