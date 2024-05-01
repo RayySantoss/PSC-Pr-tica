@@ -12,13 +12,13 @@ public class DiarioDeNotas{
         
             if(usuario1.equalsIgnoreCase("Professor")) {
                 Professor professor = new Professor();
-                professor.IdentificarProfessor();
-                usuario.setTipoUsuario("Professor");
-                System.out.println("Verificando o tipo de usuário " + usuario.getTipoUsuario());
+                professor.IdentificarUsuario();
+            
+                
             
             }else if(usuario1.equalsIgnoreCase("Aluno")) {
                 Aluno aluno = new Aluno();
-                aluno.IdentificarAluno();
+                aluno.IdentificarUsuario();
                
             } else {
                 System.out.println("Erro:opção inválida");
