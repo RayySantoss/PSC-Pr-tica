@@ -1,8 +1,25 @@
+import java.util.Scanner;
+
 public class Usuario {
     private String nome;
     private int idade;
     private String email;
     private String tipoUsuario;
+
+
+     Scanner sc = new Scanner(System.in);
+     
+      public void IdentificarUsuario(){   
+     System.out.println("Digite seu nome  Professor");
+      nome= sc.nextLine();
+      System.out.println("Ola Professor " + nome + " Seja bem vindo ");
+  
+      System.out.println("Digite seu email Professor");
+     email= sc.nextLine();
+
+     System.out.println("Digite sua idade Professor");
+     idade = sc.nextInt();
+  }
 
     public String getNome(){
         return nome;
